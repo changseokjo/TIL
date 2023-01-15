@@ -25,8 +25,17 @@
 #         print(i, end = " ")
 
 # 개수 새기
-a = int(input())
-array = [int(i) for i in input().split()]
-b = int(input())
+# a = int(input())
+# array = [int(i) for i in input().split()]
+# b = int(input())
 
-print(array.count(b))
+# print(array.count(b))
+
+# 과제 안내신 분
+a = [i for i in range(1, 31)]
+
+for _ in range(28):
+    data = int(input())
+    a.remove(data)
+print(min(a))
+print(max(a))
