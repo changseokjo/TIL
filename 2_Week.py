@@ -32,10 +32,28 @@
 # print(array.count(b))
 
 # 과제 안내신 분
-a = [i for i in range(1, 31)]
+# a = [i for i in range(1, 31)]
 
-for _ in range(28):
-    data = int(input())
-    a.remove(data)
-print(min(a))
-print(max(a))
+# for _ in range(28):
+#     data = int(input())
+#     a.remove(data)
+# print(min(a))
+# print(max(a))
+
+# 행렬 덧셈
+a, b = [], []
+
+n, m = map(int, input().split())
+
+for row in range(n):
+    row = list(map(int, input().split()))
+    a.append(row)
+
+for row in range(n):
+    row = list(map(int, input().split()))
+    b.append(row)
+    
+for row in range(n):
+    for col in range(m):
+        print(a[row][col] + b[row][col], end=' ')
+    print()
